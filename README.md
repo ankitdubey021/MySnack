@@ -8,7 +8,7 @@ Very user friendly library for Snackbar. you can easily customize this according
 Step1) Add library to your app level build file
 
 ```diff
-+ com.github.ankitdubey021:snackbartest:1.0
++ compile 'com.github.ankitdubey021:snackbartest:1.0'
 ```
 
 Step 2) In project level build file, add the jitpack repository

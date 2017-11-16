@@ -1,7 +1,7 @@
 
 
 # LibraryDemo &#x1F534;
-Very user friendly library for Snackbar. you can easily customize this according to you. MySnack provides adding textcolor, background color,fontsize, listener and many more thing by just adding a single line.
+Very user friendly library for Snackbar. you can easily customize this according to you. MySnack provides adding textcolor, background color,fontsize,time duration, listener and many more thing by just adding a single line.
 
 
 <img src="https://github.com/ankitdubey021/MySnack/blob/master/app/src/main/res/mipmap-hdpi/Screenshot_20171116-165151%5B1%5D.png" width="300" height="500"/>
@@ -11,7 +11,7 @@ Very user friendly library for Snackbar. you can easily customize this according
 Step1) Add library to your app level build file
 
 ```diff
-+ compile 'com.github.ankitdubey021:MySnack:1.1'
++ compile 'com.github.ankitdubey021:MySnack:2.0'
 ```
 
 Step 2) In project level build file, add the jitpack repository
@@ -36,6 +36,7 @@ Finally in your activity file use the library as follows:
                 .setTextColor("#ffffff")   //optional
                 .setTextSize(20)           //optional
                 .setBgColor("#2196F3")      //optional
+		.setDurationInSeconds(10)  //will display for 10 seconds
                 .setActionBtnColor("#f44336") //optional
                 .setActionListener("Ok", new View.OnClickListener() {  //optional
                     @Override

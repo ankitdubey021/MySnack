@@ -4,7 +4,7 @@
 Very user friendly library for Snackbar. you can easily customize this according to you. MySnack provides adding textcolor, background color,fontsize,time duration, listener and many more thing by just adding a single line.
 
 
-<img src="https://github.com/ankitdubey021/MySnack/blob/master/app/src/main/res/mipmap-hdpi/Screenshot_20171116-165151%5B1%5D.png" width="300" height="500"/>
+<img src="https://github.com/ankitdubey021/MySnack/blob/master/app/src/main/res/mipmap-hdpi/screenshot.png" width="300" height="500"/>
 
 <h2>Use this library:</h2>
 

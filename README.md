@@ -36,6 +36,7 @@ Finally in your activity file use the library as follows:
                 .setTextColor("#ffffff")   //optional
                 .setTextSize(20)           //optional
                 .setBgColor("#2196F3")      //optional
+		.setDurationInSeconds(10)  //will display for 10 seconds
                 .setActionBtnColor("#f44336") //optional
                 .setActionListener("Ok", new View.OnClickListener() {  //optional
                     @Override

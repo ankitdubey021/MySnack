@@ -11,7 +11,7 @@ Very user friendly library for Snackbar. you can easily customize this according
 Step1) Add library to your app level build file
 
 ```diff
-+ compile 'com.github.ankitdubey021:MySnack:2.0'
++ compile 'com.github.ankitdubey021:MySnack:2.1'
 ```
 
 Step 2) In project level build file, add the jitpack repository

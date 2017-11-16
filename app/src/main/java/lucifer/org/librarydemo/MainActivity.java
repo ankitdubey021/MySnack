@@ -21,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
                 .setTextSize(20)
                 .setBgColor("#2196F3")
                 .setActionBtnColor("#f44336")
-                .setDurationInSeconds(10)
                 .setActionListener("Ok", new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {

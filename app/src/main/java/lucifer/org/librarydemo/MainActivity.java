@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         new MySnack.SnackBuilder(findViewById(R.id.activity_main))
                 .setText("Are you sure?")
-                .setTextColor("#ffffff")
+                .setTextColor("#ffffff") //optional
                 .setTextSize(20)
                 .setBgColor("#2196F3")
                 .setActionBtnColor("#f44336")

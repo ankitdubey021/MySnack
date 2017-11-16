@@ -20,6 +20,7 @@ public class MySnack {
     private float textSize;
     private String actionBtnText;
     private View.OnClickListener listener;
+    private int time;
 
 
 
@@ -34,6 +35,7 @@ public class MySnack {
         this.textSize=builder.textSize;
         this.actionBtnColor=builder.actionBtnColor;
         this.listener=builder.listener;
+        this.time=builder.time;
 
 
     }
@@ -50,6 +52,7 @@ public class MySnack {
         private float textSize;
         private String actionBtnText;
         private View.OnClickListener listener;
+        private int time;
 
         //constructor
         public SnackBuilder(View v){
@@ -86,6 +89,10 @@ public class MySnack {
             return this;
         }
 
+        public SnackBuilder setDurationInSeconds(int time){
+            this.time=time;
+            return this;
+        }
 
         public MySnack build(){
             Snackbar bar= Snackbar.make(view,text,Snackbar.LENGTH_LONG);
@@ -131,20 +138,14 @@ public class MySnack {
             if(listener!=null)
             bar.setAction(actionBtnText, listener);
 
+            if(time!=0) {
+                bar.setDuration(time*1000);
+            }
+
             bar.show();
             return new MySnack(this);
         }
     }
 
-    /*public void show(){
-        Snackbar bar= Snackbar.make(view,text,Snackbar.LENGTH_LONG);
-        if(bgColor!=null){
-            try {
-                bar.getView().setBackgroundColor(Color.parseColor(bgColor));
-            }catch(Exception e){
-                bar.getView().setBackgroundColor(Color.parseColor("#808080"));
-            }
-        }
-        bar.show();
-    }*/
+
 }

@@ -1,6 +1,6 @@
 
 
-# LibraryDemo &#x1F534;
+# MySnack &#x1F534;
 Very user friendly library for Snackbar. you can easily customize this according to you. MySnack provides adding textcolor, background color,fontsize,time duration, listener and many more thing by just adding a single line.
 
 

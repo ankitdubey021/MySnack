@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+
+import lucifer.org.snackbartest.Icon;
 import lucifer.org.snackbartest.MySnack;
 
 public class MainActivity extends AppCompatActivity {
@@ -18,9 +20,11 @@ public class MainActivity extends AppCompatActivity {
         new MySnack.SnackBuilder(findViewById(R.id.activity_main))
                 .setText("Are you sure?")
                 .setTextColor("#ffffff") //optional
-                .setTextSize(20)
+                .setTextSize(15)
                 .setBgColor("#2196F3")
                 .setActionBtnColor("#f44336")
+                .setIcon(Icon.WARNING)
+                //or  .setIcon(R.drawable.ic_info_black_24dp)
                 .setDurationInSeconds(10)
                 .setActionListener("Ok", new View.OnClickListener() {
                     @Override

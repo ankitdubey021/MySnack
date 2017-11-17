@@ -4,14 +4,14 @@
 Very user friendly library for Snackbar. you can easily customize this according to you. MySnack provides adding textcolor, background color,fontsize,time duration, listener and many more thing by just adding a single line.
 
 
-<img src="https://github.com/ankitdubey021/MySnack/blob/master/app/src/main/res/mipmap-hdpi/screenshot.png" width="300" height="500"/>
+<img src="https://github.com/ankitdubey021/MySnack/blob/master/app/src/main/res/mipmap-hdpi/screen%5B1%5D.png" width="300" height="500"/>
 
 <h2>Use this library:</h2>
 
 Step1) Add library to your app level build file
 
 ```diff
-+ compile 'com.github.ankitdubey021:MySnack:2.1'
++ compile 'com.github.ankitdubey021:MySnack:2.2'
 ```
 
 Step 2) In project level build file, add the jitpack repository
@@ -38,6 +38,10 @@ Finally in your activity file use the library as follows:
                 .setBgColor("#2196F3")      //optional
 		.setDurationInSeconds(10)  //will display for 10 seconds
                 .setActionBtnColor("#f44336") //optional
+		
+		.setIcon(Icon.WARNING)
+                //or  .setIcon(R.drawable.ic_info_black_24dp)
+		
                 .setActionListener("Ok", new View.OnClickListener() {  //optional
                     @Override
                     public void onClick(View view) {
@@ -50,6 +54,10 @@ Finally in your activity file use the library as follows:
 
 ```diff
 - every setter method is optional, but build() must be called at last.
+	
+	this library provides 3 predefined icons like Icon.SUCCESS, Icon.WARNING and Icon.ERROR
+ 	if you want any other icon, you can set as follows
++		.setIcon(R.drawable.ic_info_black_24dp)
 ```
 
 &#x1F53C; In SnackBuilder i've passed one view. this view is the id of activity layout.

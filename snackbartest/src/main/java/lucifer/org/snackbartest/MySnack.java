@@ -1,8 +1,10 @@
 package lucifer.org.snackbartest;
 
+import android.app.Activity;
 import android.graphics.Color;
 import android.support.design.widget.Snackbar;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.TextView;
 
 /**
@@ -63,8 +65,10 @@ public class MySnack {
         private int icon;
 
         //constructor
-        public SnackBuilder(View v){
-            this.view=v;
+        public SnackBuilder(Activity activity){
+
+            this.view = (ViewGroup) ((ViewGroup) activity
+                    .findViewById(android.R.id.content)).getChildAt(0);
         }
 
         public SnackBuilder setText(String text){

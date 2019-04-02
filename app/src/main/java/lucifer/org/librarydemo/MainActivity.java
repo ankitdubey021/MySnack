@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        new MySnack.SnackBuilder(findViewById(R.id.activity_main))
+        new MySnack.SnackBuilder(this)
                 .setText("Are you sure?")
                 .setTextColor("#ffffff") //optional
                 .setTextSize(15)

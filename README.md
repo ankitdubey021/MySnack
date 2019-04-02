@@ -11,7 +11,7 @@ Very user friendly library for Snackbar. you can easily customize this according
 Step1) Add library to your app level build file
 
 ```diff
-+ compile 'com.github.ankitdubey021:MySnack:2.2'
+implementation 'com.github.ankitdubey021:MySnack:2.3'
 ```
 
 Step 2) In project level build file, add the jitpack repository
@@ -58,15 +58,6 @@ Finally in your activity file use the library as follows:
 	this library provides 3 predefined icons like Icon.SUCCESS, Icon.WARNING and Icon.ERROR
  	if you want any other icon, you can set as follows
 +		.setIcon(R.drawable.ic_info_black_24dp)
-```
-
-&#x1F53C; In SnackBuilder i've passed one view. this view is the id of activity layout.
-
-```diff
-    <?xml version="1.0" encoding="utf-8"?>
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-+ android:id="@+id/activity_main"
 ```
 
 
